@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon, NotebookIcon, CodeIcon } from "lucide-react";
 import { Python } from "@/components/ui/svgs/python";
 import { ReactLight } from "@/components/ui/svgs/reactLight";
 import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
@@ -17,7 +17,7 @@ export const DATA = {
     "Electronics & Communication Engineering student at NIT Surat. I love building full-stack products and open-source projects. Always exploring new tech.",
   summary:
     "I'm a second-year B.Tech student at [National Institute of Technology Surat](/#education) with a passion for full-stack web development. I've built real-time apps, ML-powered systems, and production-grade platforms. I've contributed to [open-source through GWOC](/#projects) and actively participate in hackathons. Currently a Junior Developer at [Google Developer Group, NIT Surat](/#work) and an Executive at ACM Club.",
-  avatarUrl: "/me.png",
+  avatarUrl: "/head-image.jpg",
   skills: [
     { name: "Python", icon: Python },
     { name: "JavaScript", icon: Nodejs },
@@ -35,6 +35,7 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "https://leetcode.com/aryanparmar", icon: CodeIcon, label: "LeetCode" },
   ],
   contact: {
     email: "ap890383@gmail.com",
@@ -56,7 +57,19 @@ export const DATA = {
         name: "X",
         url: "https://x.com/aryanparmar",
         icon: Icons.x,
-        navbar: false,
+        navbar: true,
+      },
+      Instagram: {
+        name: "Instagram",
+        url: "https://instagram.com/aryanparmar",
+        icon: Icons.instagram,
+        navbar: true,
+      },
+      LeetCode: {
+        name: "LeetCode",
+        url: "https://leetcode.com/aryanparmar",
+        icon: Icons.leetcode,
+        navbar: true,
       },
       Youtube: {
         name: "Youtube",
